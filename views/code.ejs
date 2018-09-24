@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/stylesheets/bulma.css" type="text/css">
+		<title>TechnoFair</title>
+  	</head>
+  	<body>
+		<section class="hero is-info is-bold is-fullheight">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+                    <% if (player) { %>
+						<h1 class="title">
+							<%= player.name %>
+						</h1>
+						<h2 class="title is-0">
+							<strong><%= player.code %></strong>
+						</h2>
+					<% } %>
+					<br>
+					<br>
+					<a class="button is-success is-large is-rounded" href="/home">Home</a>
+				</div>
+			</div>
+		</section>
+  	</body>
+</html>

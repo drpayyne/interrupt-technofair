@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/stylesheets/bulma.css" type="text/css">
+		<title>TechnoFair</title>
+  	</head>
+  	<body>
+		<section class="section is-info">
+			<div class="container">
+				<table class="table is-striped is-fullwidth is-bordered">
+					<thead>
+						<tr>
+							<th>Code</th>
+							<th>Name</th>
+							<th>College</th>
+							<th>Year</th>
+							<th>Score</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% players.forEach(function(player){ %>
+							<tr> 
+								<td> <%= player.code %> </td>
+								<td> <%= player.name %> </td>
+								<td> <%= player.college %> </td>
+								<td> <%= player.year %> </td>
+								<td> <%= player.score %> </td>
+							</tr>
+						<% }); %>
+					</tbody>
+				</table>
+			</div>
+		</section>
+  	</body>
+</html>
