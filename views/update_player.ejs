@@ -19,8 +19,8 @@
 						<label class="label">Event</label>
 						<div class="control">
 							<div class="select is-rounded is-medium">
-							<select name="event" required>
-								<option disabled selected>Select event</option>
+							<select name="event" required id="select">
+								<option disabled selected value="">Select event</option>
 								<option value="1">Typeracer</option>
 								<option value="2">Blind Typing</option>
 								<option value="3">Dinosaur Sprint</option>
@@ -48,7 +48,7 @@
 					<div class="field">
 						<label class="label">Player Code</label>
 						<div class="control">
-							<input class="input is-rounded is-medium" name="code" type="number" placeholder="Enter player's code" required autocomplete="off" minlength="3" maxlength="3">
+							<input class="input is-rounded is-medium" name="code" type="tel" placeholder="Enter player's code" required autocomplete="off" minlength="3" maxlength="3">
 						</div>
 					</div>
 					<br>

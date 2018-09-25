@@ -5,6 +5,7 @@ $(document).ready(function() {
 		toggle = document.querySelector('input[type="checkbox"]').checked
 		console.log(toggle)
 	});
+	$("#to-disable")
 })
 
 function updateScore() {
@@ -17,4 +18,5 @@ function updateScore() {
 
 	form.appendChild(element)
 	document.getElementById("submit").click()
+	document.querySelector('button[type="button"]').disabled = true
 }
