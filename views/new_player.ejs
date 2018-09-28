@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html>
-  	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="/stylesheets/bulma.css" type="text/css">
-		<title>TechnoFair</title>
-  	</head>
-  	<body>
-		<section class="section has-background-info is-bold">
-			<div class="container">
-                <h1 class="title">New player!</h1>
-				<h2 class="subtitle">Enter the following details of the new player</h2>
-				<form action="new_player" method="POST">
-					<div class="field">
-						<label class="label">Name</label>
-						<div class="control">
-							<input class="input" type="text" placeholder="Name of the player" name="name" pattern="[a-zA-Z .]+" required autocomplete="off" maxlength="25">
-						</div>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/stylesheets/bulma.css" type="text/css">
+	<title>TechnoFair</title>
+</head>
+
+<body>
+	<section class="section has-background-info is-bold">
+		<div class="container">
+			<h1 class="title">New player!</h1>
+			<h2 class="subtitle">Enter the following details of the new player</h2>
+			<form action="new_player" method="POST">
+				<div class="field">
+					<label class="label">Name</label>
+					<div class="control">
+						<input class="input" type="text" placeholder="Name of the player" name="name" pattern="[a-zA-Z .]+" required
+						 autocomplete="off" maxlength="25">
 					</div>
-					<div class="field">
-						<label class="label">Phone</label>
-						<div class="control">
-							<input class="input" type="tel" placeholder="Phone number of player"  name="phone" required autocomplete="off" minlength="10" maxlength="10">
-						</div>
-					</div> 
-					<div class="field">
-						<label class="label">Email</label>
-						<div class="control">
-							<input class="input" type="email" placeholder="Email ID of player" name="email" required autocomplete="off">
-						</div>
+				</div>
+				<div class="field">
+					<label class="label">Phone</label>
+					<div class="control">
+						<input class="input" type="tel" placeholder="Phone number of player" name="phone" required autocomplete="off"
+						 minlength="10" maxlength="10">
 					</div>
-					<div class="field">
-						<label class="label">College</label>
-						<div class="control">
-							<input class="input" type="text" placeholder="College name of player"  name="college" required>
-						</div>
+				</div>
+				<div class="field">
+					<label class="label">Email</label>
+					<div class="control">
+						<input class="input" type="email" placeholder="Email ID of player" name="email" required autocomplete="off">
 					</div>
-					<div class="field">
-						<label class="label">Year</label>
-						<div class="control">
-							<div class="select">
+				</div>
+				<div class="field">
+					<label class="label">College</label>
+					<div class="control">
+						<input class="input" type="text" placeholder="College name of player" name="college" required>
+					</div>
+				</div>
+				<div class="field">
+					<label class="label">Year</label>
+					<div class="control">
+						<div class="select">
 							<select name="year" required>
 								<option value="1">First</option>
 								<option value="2">Second</option>
 								<option value="3">Third</option>
 								<option value="4">Fourth</option>
 							</select>
-							</div>
 						</div>
 					</div>
-					<div class="field">
-						<div class="control">
-							<button class="button is-success is-fullwidth" type="submit">Submit</button>
-						</div>
-					</div> 
-				</form>
-			</div>
-		</section>
-  	</body>
+				</div>
+				<div class="field">
+					<div class="control">
+						<button class="button is-success is-fullwidth" type="submit">Submit</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+</body>
+
 </html>

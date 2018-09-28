@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html class="custom-full">
-  	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="/stylesheets/bulma.css" type="text/css">
-		<link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
-		<script src="/scripts/jquery-3.3.1.min.js"></script>
-		<script src="/scripts/script.js"></script>
-		<title>TechnoFair</title>
-  	</head>
-  	<body>
-		<section class="section has-background-info is-bold">
-			<div class="container">
-				<h1 class="title">TechnoFair</h1>
-				<h2 class="subtitle">"If you're good at something, never do it for free."</h2>
-				<a class="button is-primary is-fullwidth is-medium" href="home/new_player"><strong>New player</strong></a><br>
-				<a class="button is-primary is-fullwidth is-medium modal-open"><strong>View player</strong></a><br>
-				<a class="button is-primary is-fullwidth is-medium" href="home/update_player"><strong>Update player</strong></a><br>
-				<a class="button is-primary is-fullwidth is-medium" href="home/view_scores"><strong>View scoreboard</strong></a>
-			</div>
-			<div class="modal">
-				<div class="modal-background has-background-primary"></div>
-				<div class="modal-content">
-					<h1 class="title">View player</h1>
-					<form action="/home/view_player" method="GET">
-						<div class="field">
-							<label class="label">Code</label>
-							<div class="control">
-								<input class="input" type="tel" name="code" placeholder="Enter player code" required minlength="3" maxlength="3" autocomplete="off">
-							</div>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/stylesheets/bulma.css" type="text/css">
+	<link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+	<script src="/scripts/jquery-3.3.1.min.js"></script>
+	<script src="/scripts/script.js"></script>
+	<title>TechnoFair</title>
+</head>
+
+<body>
+	<section class="section has-background-info is-bold">
+		<div class="container">
+			<h1 class="title">TechnoFair</h1>
+			<h2 class="subtitle">"If you're good at something, never do it for free."</h2>
+			<a class="button is-primary is-fullwidth is-medium" href="home/new_player"><strong>New player</strong></a><br>
+			<a class="button is-primary is-fullwidth is-medium modal-open"><strong>View player</strong></a><br>
+			<a class="button is-primary is-fullwidth is-medium" href="home/update_player"><strong>Update player</strong></a><br>
+			<a class="button is-primary is-fullwidth is-medium" href="home/view_scores"><strong>View scoreboard</strong></a>
+		</div>
+		<div class="modal">
+			<div class="modal-background has-background-primary"></div>
+			<div class="modal-content">
+				<h1 class="title">View player</h1>
+				<form action="/home/view_player" method="GET">
+					<div class="field">
+						<label class="label">Code</label>
+						<div class="control">
+							<input class="input" type="tel" name="code" placeholder="Enter player code" required minlength="3" maxlength="3"
+							 autocomplete="off">
 						</div>
-						<br>
-						<button class="button is-medium is-rounded is-fullwidth" type="submit">View</button>
-					</form>
-				</div>
-				<button class="modal-close is-large"></button>
+					</div>
+					<br>
+					<button class="button is-medium is-rounded is-fullwidth" type="submit">View</button>
+				</form>
 			</div>
-		</section>
-  	</body>
+			<button class="modal-close is-large"></button>
+		</div>
+	</section>
+</body>
+
 </html>

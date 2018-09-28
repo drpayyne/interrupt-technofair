@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
-  	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="/stylesheets/bulma.css" type="text/css">
-		<link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
-		<script src="/scripts/jquery-3.3.1.min.js"></script>
-		<script src="/scripts/toggle.js"></script>
-		<title>TechnoFair</title>
-  	</head>
-  	<body>
-		<section class="section has-background-info is-bold">
-			<div class="container">
-				<h1 class="title">Update player</h1>
-				<h2 class="subtitle">Enter the following details to update the player's score</h2>
-				<form action="update_player" method="POST" id="form">
-					<div class="field">		
-						<label class="label">Event</label>
-						<div class="control">
-							<div class="select is-rounded is-medium">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/stylesheets/bulma.css" type="text/css">
+	<link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+	<script src="/scripts/jquery-3.3.1.min.js"></script>
+	<script src="/scripts/toggle.js"></script>
+	<title>TechnoFair</title>
+</head>
+
+<body>
+	<section class="section has-background-info is-bold">
+		<div class="container">
+			<h1 class="title">Update player</h1>
+			<h2 class="subtitle">Enter the following details to update the player's score</h2>
+			<form action="update_player" method="POST" id="form">
+				<div class="field">
+					<label class="label">Event</label>
+					<div class="control">
+						<div class="select is-rounded is-medium">
 							<select name="event" required id="select">
 								<option disabled selected value="">Select event</option>
 								<option value="1">Typeracer</option>
@@ -32,34 +34,37 @@
 								<option value="9">Ping Pong</option>
 								<option value="10">Minute To Win It</option>
 							</select>
-							</div>
 						</div>
 					</div>
-					<label class="label">Score</label>
-					<label class="switch">
-						<input type="checkbox" id="toggle">
-						<span class="slider round"></span>
-					</label>	
-					<div class="field">		
-						<div class="control">	
-							<input class="input is-rounded is-medium" name="score" type="number" id="score" placeholder="Enter score to update" style="margin-top: 8px;" required autocomplete="off">
-						</div>
+				</div>
+				<label class="label">Score</label>
+				<label class="switch">
+					<input type="checkbox" id="toggle">
+					<span class="slider round"></span>
+				</label>
+				<div class="field">
+					<div class="control">
+						<input class="input is-rounded is-medium" name="score" type="number" id="score" placeholder="Enter score to update"
+						 style="margin-top: 8px;" required autocomplete="off">
 					</div>
-					<div class="field">
-						<label class="label">Player Code</label>
-						<div class="control">
-							<input class="input is-rounded is-medium" name="code" type="tel" id="code" placeholder="Enter player's code" required autocomplete="off" minlength="3" maxlength="3">
-						</div>
+				</div>
+				<div class="field">
+					<label class="label">Player Code</label>
+					<div class="control">
+						<input class="input is-rounded is-medium" name="code" type="tel" id="code" placeholder="Enter player's code"
+						 required autocomplete="off" minlength="3" maxlength="3">
 					</div>
-					<br>
-					<div class="field">
-						<div class="control">
-							<button class="button is-success is-fullwidth is-medium is-rounded" type="button" onClick="updateScore()">Submit</button>
-						</div>
+				</div>
+				<br>
+				<div class="field">
+					<div class="control">
+						<button class="button is-success is-fullwidth is-medium is-rounded" type="button" onClick="updateScore()">Submit</button>
 					</div>
-					<input type="submit" style="display:none;" id="submit"/> 
-				</form>
-			</div>
-		</section>
-	</body>
+				</div>
+				<input type="submit" style="display:none;" id="submit" />
+			</form>
+		</div>
+	</section>
+</body>
+
 </html>
